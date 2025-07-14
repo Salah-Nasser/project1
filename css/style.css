@@ -1,0 +1,1039 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(73, 76, 152, 0.7);
+    position: fixed;
+    z-index: 20;
+    top: 0;
+}
+.fa-home{
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.header-input{
+    width: 220px;
+    height: 30px;
+    margin-left: 20px;
+    padding-top: 10px;
+    border-radius: 15px;
+    border: 0;
+}
+.fa-search{
+    position: absolute;
+    left: 90px;
+    top: 20px;
+}
+.home-header-ul{
+    float: right;
+    list-style-type: none;
+    padding-top: 15px;
+    margin-right: 24px;
+}
+.home-header-ul li {
+    display: inline;
+    margin-right: 25px;
+    font-size: 16px;
+}
+.home-header-ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home-header-ul li a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    opacity: 1;
+}
+.home-header-ul li a:hover::after{
+    width: 100%;
+    height: 2px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.blog-ul{
+    list-style: none;
+    position: absolute;
+    z-index: 21;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    top: 45px;
+    left: 1290px;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px;
+    visibility: hidden;
+    opacity: 0;
+}
+.blog-ul li {
+    margin-top: 13px;
+    margin-right: 23px;
+    
+}
+.blog-ul li a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(73, 76, 152, 0.7);
+    position: relative;
+    text-align: center;
+    padding: 11px  0px;
+}
+.blog-dropdown:hover .blog-ul{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.home-container{
+    width: 100%;
+    height: 700px;
+}
+.home-parent{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/2151774737.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-parent-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home-content{
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-title{
+    font-size: 65px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+   
+}
+.home-p{
+    color: rgb(151, 151, 151);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+     padding: 9px 0px;
+}
+.home-btn{
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    padding: 16px;
+    border: 0;
+    border-radius: 11px;
+    text-transform: capitalize;
+}
+.home-btn2{
+    background-color: rgb(84, 87, 174);
+    color: white;
+}
+.home-btn:hover{
+    opacity: 0.4;
+}
+.welcome-title{
+    text-align: center;
+    padding-top: 75px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.welcome-title-hr{
+    width: 90px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;   
+    margin-top: 20px; 
+}
+.welcome-container{
+    width: 90%;
+    margin: auto;
+}
+.welcome-parent{
+    overflow: auto;
+    width: 90%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40px;
+    margin-top: 60px;
+}
+.fully-div{
+    float: left;
+    width: 320px;
+    height: 230px;
+    padding: 18px 0px;
+    text-align: center;
+    border: 1px solid rgb(94, 97, 166);
+    border-radius: 9px;
+    position: relative;
+    z-index: 1;
+}
+.fully-div2{
+    margin: 0 100px;
+}
+.fully-icons{
+    font-size: 28px;
+    color:rgb(94, 97, 166) ;
+    margin-top: 8px;
+}
+.fully-customizable-h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.fully-customizable-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 25px;
+    color: rgb(107, 107, 107);
+    padding-bottom: 25px;
+    
+}
+.fully-customizable-a{
+    text-decoration: none;
+    color:rgb(94, 97, 166) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.fully-div::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgb(108, 111, 185);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 9px;
+    z-index: -1;
+}
+.fully-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.fully-div:hover .fully-customizable-h2{
+    color: white;
+}
+.fully-div:hover .fully-customizable-p{
+    color: black;
+}
+.fully-div:hover .fully-customizable-a{
+    color: rgb(34, 36, 119);
+}
+.fully-div:hover .fully-icons{
+    color: rgb(34, 36, 119);
+}
+.featured-section-background{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(225, 222, 222);
+}
+.featured-title{
+    text-align: center;
+    padding-top: 75px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.featured-title-hr{
+    width: 90px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;   
+    margin-top: 20px; 
+}
+.featured-container{
+    width: 70%;
+    margin: auto;
+}
+.featured-parent{
+    overflow: auto;
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+}
+.featured-image{
+    float: left;
+    width: 31%;
+    height: 220px;
+    position: relative;
+}
+.image1{
+    background-image: url(../images/perfume\ image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image2{
+    margin: 0px 3.5%;
+    background-image: url(../images/prefume\ image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image3{
+    background-image: url(../images/perfume\ image\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image4{
+    background-image: url(../images/perfume\ image4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image5{
+    margin: 0px 3.5%;
+    background-image: url(../images/perfume\ image5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image6{
+    background-image: url(../images/perfume\ image6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.featured-image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    text-align: center;
+}
+.featured-image:hover .featured-image-overlay{
+    visibility: visible;
+}
+.image-overlay-h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    color: rgb(163, 161, 161);
+    text-transform: uppercase;
+}
+.image-overlay-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.icon-a{
+    background-color: white;
+    display: block;
+    float: left;
+    border-radius: 4px;
+}
+.icon-a1{
+    margin-left: 110px;
+    margin-right: 5px;
+}
+.overlay-icon{
+    color:rgb(114, 112, 112) ;
+    font-size: 20px;
+    width: 45px;
+    height: 30px;
+    text-align: center;
+    line-height: 40px;
+    padding: 5px;
+}
+.offer-title{
+    text-align: center;
+    padding-top: 75px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.offer-title-hr{
+    width: 90px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;   
+    margin-top: 20px; 
+}
+.offer-container{
+    width: 80%;
+    margin: auto;
+    /* height: 100vh; */
+}
+.offer-parent{
+    overflow: auto;
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+}
+.offer-parent2{
+    padding-top: 10px;
+}
+.wide-range-div{
+    float: left;
+    width: 26%;
+    height: 210px;
+    border: 1px solid rgb(94, 97, 166);
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+}
+.wide2{
+    margin: 0px 7.33%;
+}
+.wide-range-a{
+    font-size: 30px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: rgb(94, 97, 166);
+
+}
+.wide-range-h2{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 55px;
+    padding-top: 25px;
+}
+.wide-range-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(147, 147, 147);
+    padding-top: 10px;
+    padding-left: 55px;
+    padding-right: 10px;
+}
+.wide-range-div::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgb(151, 153, 205);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 9px;
+    z-index: -1;
+}
+.wide-range-div:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.wide-range-div:hover .wide-range-a{
+    color: rgb(34, 36, 119);
+}
+.wide-range-div:hover .wide-range-h2{
+    color: rgb(54, 55, 114);
+}
+.wide-range-div:hover .wide-range-p{
+    color: black;
+}
+.choose-us-container{
+    width: 80%;
+    margin: auto;
+}
+.choose-us-parent{
+    overflow: auto;
+    width: 100%;
+    height: 600px;
+    /* background-color: aquamarine; */
+    margin-top: 150px;
+}
+.choose-us-content{
+    float: left;
+    width: 53%;
+    height: 500px;
+    /* background-color: rgb(166, 214, 138); */
+    margin-top: 30px;
+}
+.choose-us-title{
+    padding-top: 75px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.choose-us-hr{
+    width: 75px;
+    height: 3px;
+    background-color: blue;
+    margin-top: 10px; 
+}
+.choose-us-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 40px;
+    color: rgb(147, 147, 147);
+}
+.choose-us-content-ul{
+    list-style-type: none;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(107, 106, 106);
+}
+.choose-content-li{
+    padding-bottom: 40px;
+}
+.fa-check{
+    color: rgb(94, 97, 166);
+}
+.choose-us-image-div{
+    float: right;
+    width: 350px;   
+    height: 510px;
+    margin-right: 70px;
+    margin-top: 50px;
+    /* background-color: rgb(255, 183, 0); */
+}
+.choose-us-image{
+    width: 350px;
+    height: 450px;
+    background-image: url(../images/choose-us-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.choose-us-image-ul-div{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 40px;
+}
+.choose-image-ul li{
+    list-style-type: none;
+    display: inline;
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 14px;
+}
+.first-li{
+    margin-left: 140px;
+    background-color: rgb(154, 132, 221);
+}
+.second-li{
+    margin-left: 12px;
+    background-color: rgb(178, 176, 176);
+}
+.third-li{
+    margin-left: 12px;
+    background-color: rgb(178, 176, 176);
+}
+.second-li:hover{
+    background-color: rgb(154, 132, 221);
+}
+.third-li:hover{
+    background-color: rgb(154, 132, 221);
+}
+.achievements-container{
+    width: 100%;
+}
+.achievements-background{
+    width: 100%;
+    height: 390px;
+    background-image: url(../images/perfume\ background\ image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    position: relative;
+}
+.achievements-background-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.achievements-logo-parent{
+    overflow: auto;
+    width: 80%;
+    height: 250PX;
+    margin: auto;
+    margin-top: 60px;
+}
+.achievements-logo-div{
+    float: left;
+    width: 25%;
+    height: 200px;
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 50px;
+}
+.achievements-logos{
+    font-size: 42px;
+    color:rgb(111, 113, 167) ;
+}
+.achievements-h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-top: 13px;
+}
+.achievements-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-top: 3px;
+}
+.pricing-title{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pricing-title-hr{
+    width: 120px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;   
+    margin-top: 10px; 
+}
+.pricing-container{
+    width: 70%;
+    margin: auto;
+}
+.pricing-parent{
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+.pricing-content-div{
+    width: 30%;
+    height: 380px;
+    float: left;
+    border: 1px solid rgb(125, 127, 178);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.pricing-middle-div{
+    margin: 0px 5%;
+}
+.pricing-content-div::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(182, 183, 220);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 9px;
+    z-index: -1;
+}
+.pricing-content-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.pricing-div-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.pricing-content-div:hover .pricing-div-title{
+    color: rgb(13, 16, 197);
+}
+.pricing-crl-div{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(125, 127, 178);
+    border-radius: 50%;
+}
+.pricing-content-div:hover .pricing-crl-div{
+    border: 2px solid rgb(13, 16, 197);
+}
+.pricing-crl-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 13px;
+    text-transform: uppercase;
+}
+.price-span{
+    font-size: 37px;
+}
+.pricing-div-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.pricing-btn{
+    width: 175px;
+    height: 30px;
+    border: 1px solid rgb(125, 127, 178);
+    border-radius: 9px;
+    text-transform: capitalize;
+}
+.credits-container{
+    width: 100%;
+}
+.credits-background{
+    width: 100%;
+    height: 390px;
+    background-image: url(../images/credits-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    position: relative;
+}
+.credits-background-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.credits-parent{
+    overflow-y: auto;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+.credit-person-div{
+    float: left;
+    width: 45%;
+    height: 80%;
+    margin-top: 30PX;
+    margin-left: 30px;
+    position: relative;
+}
+.person-div2{
+    margin-left: 60px;
+}
+.credit-person-crl{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 40px 0  0  10px;
+    background-image: url(../images/credit-person1.jpg);
+    background-size: cover;
+}
+.credit-person2{
+    background-image: url(../images/credit\ person2.jpg);
+    background-size: cover;
+}
+.credit-person-h2{
+    display: inline;
+    position: absolute;
+    left: 120px;
+    top: 60px;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    color: white;
+}
+.credit-person-h3{
+    display: inline;
+    position: absolute;
+    left: 120px;
+    top: 95px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    color: rgb(76, 76, 204);
+    text-transform: capitalize;
+}
+.credit-person-p{
+    position: absolute;
+    left: 10px;
+    top: 145px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+}
+.team-title{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.team-title-hr{
+    width: 100px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;   
+    margin-top: 10px; 
+    margin-bottom: 50px;
+}
+.team-container{
+    width: 80%;
+    /* height: 400px; */
+    margin: auto;
+}
+.team-parent{
+    overflow: auto;
+}
+.team-item{
+    float: left;
+    background-color: rgb(219, 217, 216);
+    width: 30%;
+    padding: 18px  8px;
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+}
+.team-item2{
+    margin: 0 5%;
+}
+.team-image{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.team-image  img{
+    width: 100%;
+}
+.team-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    
+}
+.team-item:hover .team-icons{
+    visibility: visible;
+    
+}
+.team-icons  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(76, 76, 204) ;
+    color: white;
+    margin-left: auto;
+
+}
+.team-icons a i {
+    line-height: 40px;
+}
+.team-info-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.team-item:hover .team-info-title{
+    color: white;
+}
+.team-info-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgb(131, 124, 124);
+    padding: 8px;
+}
+.team-item:hover .team-info-p{
+    color: rgb(76, 76, 204);
+}
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(193, 194, 235);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 9px;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.news-title{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.news-title-hr{
+    width: 100px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;   
+    margin-top: 10px; 
+    margin-bottom: 50px;
+}
+.news-container{
+    width: 80%;
+    margin: auto;
+}
+.news-parent{
+    overflow: auto;
+}
+.news-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 1px solid rgb(125, 127, 178);
+    border-radius: 12px;
+    position: relative;
+}
+.news-item2{
+    margin: 0 5%;
+}
+
+.news-image{
+    width: 80%;
+    margin: auto;
+    padding: 18px  8px;
+    
+}
+.news-image  img{
+    width: 95%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.news-content{
+    padding-bottom: 20px;
+}
+.news-content a i {
+    color: rgb(58, 58, 185);
+}
+.news-content span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 10px 0px 5px;
+}
+.news-content-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 14px;
+}
+.news-item:hover .news-content-title{
+    color: white;
+}
+.news-content-p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(101, 98, 98);
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+.news-item:hover .news-content-p{
+    color: rgb(48, 48, 171)
+}
+.news-content-a{
+    display: inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.news-item2 .news-content .news-content-p{
+    margin-bottom: 6px;
+    margin-top: 14px;
+}
+.news-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(182, 183, 220);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 9px;
+    z-index: -1;
+}
+.news-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.copyright-container{
+    width: 100%;
+    /* height: 350px; */
+    margin-top: 90px;
+    background-color: rgb(182, 183, 220);
+}
+.copyright-parent{
+    overflow: auto;
+    /* height: 100%; */
+    padding-top: 20PX;
+}
+.copyright-item{
+    width: 30%;
+    /* height: 400px; */
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+}
+.copyright-image{
+    width: 60%;
+    height: 180px;
+    margin: auto;
+    /* margin-top: 20PX; */
+    background-image: url(../images/copyright-image.jpg);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.copyright-image img{
+    width: 100%;
+
+}
+.copyright-content{
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.copyright-icon{
+    float: left;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(176, 129, 220);
+    border-radius: 50%;
+    margin: 20px 3px 5px 0px;
+}
+.copy-icon1{
+    margin-left: 45px;
+}
+.copyright-icon i {
+    line-height: 55px;
+    font-size: 32px;
+    color: white;
+}
+.copyright-icon:hover{
+    background-color: rgb(81, 43, 117);
+    transition: 0.6s;
+}
+.copyright-content{
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.copyright-p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(87, 82, 82);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
